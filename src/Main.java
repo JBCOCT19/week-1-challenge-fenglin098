@@ -6,10 +6,10 @@ public class Main {
         String answer2;
         do {
             System.out.println("Would you like to generate a random number or input a number? (R/I)");
-            String answer = keyboard.nextLine();
+            String answer = keyboard.next();
             if (answer.equalsIgnoreCase("I")) {
                 int counter = 0;
-                System.out.println("Please input a number: \b");
+                System.out.println("Please input a number: ");
                 int numInput = keyboard.nextInt();
                 for (int i = 1; i <= numInput; i++) {
                     if (numInput % i == 0) {
@@ -42,8 +42,7 @@ public class Main {
                 }
             }
             System.out.println("Would you like to try again (Y/N)");
-            keyboard.nextLine();
-            answer2=keyboard.nextLine();
+            answer2=keyboard.next();
         }while(answer2.equalsIgnoreCase("Y"));
     }
 }
