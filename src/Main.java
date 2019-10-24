@@ -42,7 +42,7 @@ public class Main {
                 }
             }
             System.out.println("Would you like to try again (Y/N)");
-            answer2=keyboard.next();
+            answer2=keyboard.nextLine();
         }while(answer2.equalsIgnoreCase("Y"));
     }
 }
