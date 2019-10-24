@@ -9,7 +9,7 @@ public class Main {
             String answer = keyboard.nextLine();
             if (answer.equalsIgnoreCase("I")) {
                 int counter = 0;
-                System.out.println("Please input a number: ");
+                System.out.println("Please input a number: \b");
                 int numInput = keyboard.nextInt();
                 for (int i = 1; i <= numInput; i++) {
                     if (numInput % i == 0) {
@@ -42,6 +42,7 @@ public class Main {
                 }
             }
             System.out.println("Would you like to try again (Y/N)");
+            keyboard.nextLine();
             answer2=keyboard.nextLine();
         }while(answer2.equalsIgnoreCase("Y"));
     }
